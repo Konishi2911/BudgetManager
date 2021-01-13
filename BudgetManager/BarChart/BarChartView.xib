@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BarChartView" customModule="BudgetManager" customModuleProvider="target">
+            <connections>
+                <outlet property="_baseView" destination="c22-O7-iKe" id="ePs-Ro-pPr"/>
+                <outlet property="chartView" destination="BIf-MM-Etr" id="qzk-bW-jRo"/>
+                <outlet property="titleField" destination="9CI-Jq-Ysn" id="28E-rM-XSC"/>
+                <outlet property="xLabelView" destination="RkU-hM-Jkt" id="bdj-83-pFn"/>
+                <outlet property="yLabelView" destination="qcT-eP-gM7" id="uiZ-fc-tyd"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="265"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9CI-Jq-Ysn">
+                    <rect key="frame" x="18" y="232" width="78" height="33"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="Inr-1Y-YQy">
+                        <font key="font" size="28" name="HelveticaNeue-Bold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="BIf-MM-Etr" customClass="_BCChartView" customModule="BudgetManager" customModuleProvider="target">
+                    <rect key="frame" x="60" y="30" width="310" height="187"/>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="qcT-eP-gM7" customClass="_BCYLabelView" customModule="BudgetManager" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="30" width="60" height="187"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="4iV-jB-oBe"/>
+                    </constraints>
+                </customView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="RkU-hM-Jkt" customClass="_BCXLabelView" customModule="BudgetManager" customModuleProvider="target">
+                    <rect key="frame" x="60" y="0.0" width="310" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="nEO-0D-kRe"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9CI-Jq-Ysn" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="3Bz-hm-cxG"/>
+                <constraint firstAttribute="bottom" secondItem="RkU-hM-Jkt" secondAttribute="bottom" id="CtT-0z-alj"/>
+                <constraint firstItem="RkU-hM-Jkt" firstAttribute="leading" secondItem="BIf-MM-Etr" secondAttribute="leading" id="LBK-s8-diV"/>
+                <constraint firstItem="BIf-MM-Etr" firstAttribute="leading" secondItem="qcT-eP-gM7" secondAttribute="trailing" id="Ln6-UC-9xe"/>
+                <constraint firstItem="RkU-hM-Jkt" firstAttribute="trailing" secondItem="BIf-MM-Etr" secondAttribute="trailing" id="NcJ-Ij-d9y"/>
+                <constraint firstItem="9CI-Jq-Ysn" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="20" id="S7m-bp-2EI"/>
+                <constraint firstItem="qcT-eP-gM7" firstAttribute="top" secondItem="9CI-Jq-Ysn" secondAttribute="bottom" constant="15" id="clG-qu-hx6"/>
+                <constraint firstItem="BIf-MM-Etr" firstAttribute="top" secondItem="qcT-eP-gM7" secondAttribute="top" id="kCF-sa-7PA"/>
+                <constraint firstItem="RkU-hM-Jkt" firstAttribute="top" secondItem="BIf-MM-Etr" secondAttribute="bottom" id="luJ-cr-qYw"/>
+                <constraint firstItem="qcT-eP-gM7" firstAttribute="bottom" secondItem="BIf-MM-Etr" secondAttribute="bottom" id="sxV-45-yH4"/>
+                <constraint firstItem="qcT-eP-gM7" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="uIG-sC-oXc"/>
+                <constraint firstAttribute="trailing" secondItem="BIf-MM-Etr" secondAttribute="trailing" id="ztl-7D-Nh4"/>
+            </constraints>
+            <point key="canvasLocation" x="-41" y="116.5"/>
+        </customView>
+    </objects>
+</document>

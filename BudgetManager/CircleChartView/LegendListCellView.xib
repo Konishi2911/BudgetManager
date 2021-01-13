@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LegendListCellView" customModule="BudgetManager" customModuleProvider="target">
+            <connections>
+                <outlet property="_baseView" destination="aE3-2z-vEm" id="WIZ-m8-rPr"/>
+                <outlet property="symbol" destination="yIQ-hm-fi7" id="G9l-rf-wWd"/>
+                <outlet property="title" destination="YIz-H2-BLX" id="p9d-2Z-y24"/>
+                <outlet property="values" destination="Xro-rv-Gbf" id="ERD-LT-Oqv"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aE3-2z-vEm">
+            <rect key="frame" x="0.0" y="0.0" width="283" height="35"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YIz-H2-BLX">
+                    <rect key="frame" x="20" y="17" width="38" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="NOv-hv-lFb">
+                        <font key="font" size="13" name="HelveticaNeue-Bold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xro-rv-Gbf">
+                    <rect key="frame" x="30" y="2" width="36" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="j2Y-bd-0Iw"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="fk5-NS-NbG">
+                        <font key="font" size="13" name="HelveticaNeue"/>
+                        <color key="textColor" name="CircleChartView_RawValueColor"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box boxType="custom" borderType="bezel" cornerRadius="4" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="yIQ-hm-fi7">
+                    <rect key="frame" x="0.0" y="10" width="15" height="15"/>
+                    <view key="contentView" id="J8N-oI-qA1">
+                        <rect key="frame" x="1" y="1" width="13" height="13"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="yIQ-hm-fi7" secondAttribute="height" multiplier="1:1" id="N9r-Aa-4LO"/>
+                        <constraint firstAttribute="height" constant="15" id="ldW-jb-tGx"/>
+                    </constraints>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstItem="yIQ-hm-fi7" firstAttribute="leading" secondItem="aE3-2z-vEm" secondAttribute="leading" id="Cz3-vr-f5Q"/>
+                <constraint firstAttribute="bottom" secondItem="Xro-rv-Gbf" secondAttribute="bottom" constant="2" id="PIE-7z-wyN"/>
+                <constraint firstItem="yIQ-hm-fi7" firstAttribute="centerY" secondItem="aE3-2z-vEm" secondAttribute="centerY" id="Pa2-wB-dyq"/>
+                <constraint firstItem="YIz-H2-BLX" firstAttribute="top" secondItem="aE3-2z-vEm" secondAttribute="top" constant="2" id="Toi-98-5iE"/>
+                <constraint firstItem="Xro-rv-Gbf" firstAttribute="top" secondItem="YIz-H2-BLX" secondAttribute="bottom" id="WP0-iS-IR0"/>
+                <constraint firstItem="Xro-rv-Gbf" firstAttribute="leading" secondItem="YIz-H2-BLX" secondAttribute="leading" constant="10" id="YJU-J8-J8Q"/>
+                <constraint firstItem="YIz-H2-BLX" firstAttribute="leading" secondItem="yIQ-hm-fi7" secondAttribute="trailing" constant="7" id="auZ-aA-zzN"/>
+            </constraints>
+            <point key="canvasLocation" x="-74.5" y="110.5"/>
+        </tableCellView>
+    </objects>
+    <resources>
+        <namedColor name="CircleChartView_RawValueColor">
+            <color white="0.23999999463558197" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </namedColor>
+    </resources>
+</document>

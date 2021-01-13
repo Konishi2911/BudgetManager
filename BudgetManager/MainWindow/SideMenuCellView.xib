@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SideMenuCellView" customModule="BudgetManager" customModuleProvider="target">
+            <connections>
+                <outlet property="_baseView" destination="Uyt-Wr-m6S" id="kq3-5i-A88"/>
+                <outlet property="icon" destination="Ep5-54-pUh" id="8mW-mM-yVY"/>
+                <outlet property="menuTitle" destination="m3g-wY-uuU" id="uIZ-eL-ZbF"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView id="Uyt-Wr-m6S">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="41"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ep5-54-pUh">
+                    <rect key="frame" x="10" y="4" width="24" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Ep5-54-pUh" secondAttribute="height" multiplier="1:1" id="0qU-Pw-kkG"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="nbK-yt-PkB">
+                        <imageReference key="image" image="house" catalog="system" symbolScale="large"/>
+                    </imageCell>
+                    <color key="contentTintColor" name="AccentColor"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m3g-wY-uuU">
+                    <rect key="frame" x="42" y="10" width="249" height="21"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="mDx-aq-LuG">
+                        <font key="font" textStyle="title2" name=".SFNS-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="m3g-wY-uuU" firstAttribute="leading" secondItem="Ep5-54-pUh" secondAttribute="trailing" constant="10" id="PiP-hk-7BF"/>
+                <constraint firstItem="Ep5-54-pUh" firstAttribute="centerY" secondItem="Uyt-Wr-m6S" secondAttribute="centerY" id="bMz-Z5-0XM"/>
+                <constraint firstItem="m3g-wY-uuU" firstAttribute="top" secondItem="Uyt-Wr-m6S" secondAttribute="top" constant="10" id="bbE-xs-Kid"/>
+                <constraint firstItem="m3g-wY-uuU" firstAttribute="centerY" secondItem="Uyt-Wr-m6S" secondAttribute="centerY" id="cTa-Ia-JR0"/>
+                <constraint firstAttribute="trailing" secondItem="m3g-wY-uuU" secondAttribute="trailing" constant="10" id="kCs-wR-vTI"/>
+                <constraint firstAttribute="bottom" secondItem="m3g-wY-uuU" secondAttribute="bottom" constant="10" id="qcD-r6-o6B"/>
+                <constraint firstItem="Ep5-54-pUh" firstAttribute="leading" secondItem="Uyt-Wr-m6S" secondAttribute="leading" constant="10" id="t3Y-ZT-84j"/>
+            </constraints>
+            <point key="canvasLocation" x="-178.5" y="223.5"/>
+        </tableCellView>
+    </objects>
+    <resources>
+        <image name="house" catalog="system" width="24" height="20"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

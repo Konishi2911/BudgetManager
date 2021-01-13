@@ -7,12 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8184FB125805C1A00DC0E33 /* DataContainerForChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8184FB025805C1A00DC0E33 /* DataContainerForChart.swift */; };
+		F8184FC325838B2900DC0E33 /* BarChartView_OLD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8184FC225838B2900DC0E33 /* BarChartView_OLD.swift */; };
 		F881757D25789A400000C2D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F881757C25789A400000C2D6 /* AppDelegate.swift */; };
-		F881757F25789A400000C2D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F881757E25789A400000C2D6 /* ViewController.swift */; };
 		F881758125789A420000C2D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F881758025789A420000C2D6 /* Assets.xcassets */; };
 		F881758425789A420000C2D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F881758225789A420000C2D6 /* Main.storyboard */; };
 		F881759025789A430000C2D6 /* BudgetManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F881758F25789A430000C2D6 /* BudgetManagerTests.swift */; };
 		F881759B25789A430000C2D6 /* BudgetManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F881759A25789A430000C2D6 /* BudgetManagerUITests.swift */; };
+		F88175B525789B1F0000C2D6 /* BarChartViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88175AC25789B1F0000C2D6 /* BarChartViewDelegate.swift */; };
+		F88175B625789B1F0000C2D6 /* BarChartDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88175AD25789B1F0000C2D6 /* BarChartDataSource.swift */; };
+		F88175B725789B1F0000C2D6 /* BarChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F88175AE25789B1F0000C2D6 /* BarChartView.xib */; };
+		F88175B825789B1F0000C2D6 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88175AF25789B1F0000C2D6 /* BarChartView.swift */; };
+		F88175B925789B1F0000C2D6 /* CircleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88175B125789B1F0000C2D6 /* CircleChartView.swift */; };
+		F88175BA25789B1F0000C2D6 /* CircleChartViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88175B225789B1F0000C2D6 /* CircleChartViewDelegate.swift */; };
+		F88175BB25789B1F0000C2D6 /* CircleChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F88175B325789B1F0000C2D6 /* CircleChartView.xib */; };
+		F88175BC25789B1F0000C2D6 /* LegendListCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F88175B425789B1F0000C2D6 /* LegendListCellView.xib */; };
+		F88175C125789BE50000C2D6 /* LegendListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88175C025789BE50000C2D6 /* LegendListCellView.swift */; };
+		F88175C625789E100000C2D6 /* Contents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88175C525789E100000C2D6 /* Contents.storyboard */; };
+		F88175CC25789E7E0000C2D6 /* BudgetCoreDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88175CB25789E7E0000C2D6 /* BudgetCoreDatabase.framework */; };
+		F88175CD25789E7E0000C2D6 /* BudgetCoreDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F88175CB25789E7E0000C2D6 /* BudgetCoreDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F88175D225789ED60000C2D6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88175D125789ED60000C2D6 /* HomeViewController.swift */; };
+		F88175DA2578D6990000C2D6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88175D92578D6990000C2D6 /* DetailViewController.swift */; };
+		F88175E02578E4AA0000C2D6 /* SidebarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88175DF2578E4AA0000C2D6 /* SidebarViewController.swift */; };
+		F88175E82578E5A00000C2D6 /* DetailPageViewControllerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88175E72578E5A00000C2D6 /* DetailPageViewControllerContainer.swift */; };
+		F8CD960825792B480057D995 /* SideMenuCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8CD960725792B480057D995 /* SideMenuCellView.xib */; };
+		F8CD960C25792D050057D995 /* SideMenuCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD960B25792D050057D995 /* SideMenuCellView.swift */; };
+		F8CD96102579D41F0057D995 /* TransactionDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8CD960F2579D41F0057D995 /* TransactionDetail.storyboard */; };
+		F8EA8808257BB5850049C921 /* TransactionEditorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA8807257BB5850049C921 /* TransactionEditorDelegate.swift */; };
+		F8EA8810257CE5A90049C921 /* TransactionDBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA880F257CE5A90049C921 /* TransactionDBHelper.swift */; };
+		F8EA8816257E2AE50049C921 /* UsageTrendChartDataSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA8815257E2AE50049C921 /* UsageTrendChartDataSourceManager.swift */; };
+		F8EA881A257F060D0049C921 /* UsageBreakdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA8819257F060D0049C921 /* UsageBreakdownViewController.swift */; };
+		F8EA8820258059700049C921 /* TargetPeriodManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA881F258059700049C921 /* TargetPeriodManager.swift */; };
+		F8EA882425805A980049C921 /* UsageBreakdownChartDataSourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EA882325805A980049C921 /* UsageBreakdownChartDataSourceManager.swift */; };
+		F8EC2FB0258838D000185EA2 /* UsageOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC2FAF258838D000185EA2 /* UsageOverviewViewController.swift */; };
+		F8EC2FB42588391B00185EA2 /* UsageHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC2FB32588391B00185EA2 /* UsageHistoryViewController.swift */; };
+		F8EC2FB825884A9400185EA2 /* RefarenceDateOffsetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC2FB725884A9400185EA2 /* RefarenceDateOffsetable.swift */; };
+		F8FDA7AF257A5C4A00748B62 /* UsageJournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDA7AE257A5C4A00748B62 /* UsageJournalViewController.swift */; };
+		F8FDA7B4257A908A00748B62 /* TransactionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD96132579DB850057D995 /* TransactionEditorViewController.swift */; };
+		F8FDA7BC257B5C6800748B62 /* AnimatableModalSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDA7BB257B5C6700748B62 /* AnimatableModalSegue.swift */; };
+		F8FDA7C0257B784F00748B62 /* TaxConfiguratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDA7BF257B784F00748B62 /* TaxConfiguratorViewController.swift */; };
+		F8FDA7C4257B813E00748B62 /* TaxConfiguratorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FDA7C3257B813E00748B62 /* TaxConfiguratorDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +66,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F88175CE25789E7E0000C2D6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F88175CD25789E7E0000C2D6 /* BudgetCoreDatabase.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F8184FB025805C1A00DC0E33 /* DataContainerForChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainerForChart.swift; sourceTree = "<group>"; };
+		F8184FC225838B2900DC0E33 /* BarChartView_OLD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView_OLD.swift; sourceTree = "<group>"; };
 		F881757925789A400000C2D6 /* BudgetManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudgetManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F881757C25789A400000C2D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F881757E25789A400000C2D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F881758025789A420000C2D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F881758325789A420000C2D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F881758525789A430000C2D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +95,38 @@
 		F881759625789A430000C2D6 /* BudgetManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F881759A25789A430000C2D6 /* BudgetManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetManagerUITests.swift; sourceTree = "<group>"; };
 		F881759C25789A430000C2D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F88175AC25789B1F0000C2D6 /* BarChartViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewDelegate.swift; sourceTree = "<group>"; };
+		F88175AD25789B1F0000C2D6 /* BarChartDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartDataSource.swift; sourceTree = "<group>"; };
+		F88175AE25789B1F0000C2D6 /* BarChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarChartView.xib; sourceTree = "<group>"; };
+		F88175AF25789B1F0000C2D6 /* BarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		F88175B125789B1F0000C2D6 /* CircleChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleChartView.swift; sourceTree = "<group>"; };
+		F88175B225789B1F0000C2D6 /* CircleChartViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleChartViewDelegate.swift; sourceTree = "<group>"; };
+		F88175B325789B1F0000C2D6 /* CircleChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleChartView.xib; sourceTree = "<group>"; };
+		F88175B425789B1F0000C2D6 /* LegendListCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LegendListCellView.xib; sourceTree = "<group>"; };
+		F88175C025789BE50000C2D6 /* LegendListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendListCellView.swift; sourceTree = "<group>"; };
+		F88175C525789E100000C2D6 /* Contents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Contents.storyboard; sourceTree = "<group>"; };
+		F88175CB25789E7E0000C2D6 /* BudgetCoreDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BudgetCoreDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88175D125789ED60000C2D6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F88175D92578D6990000C2D6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F88175DF2578E4AA0000C2D6 /* SidebarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarViewController.swift; sourceTree = "<group>"; };
+		F88175E72578E5A00000C2D6 /* DetailPageViewControllerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewControllerContainer.swift; sourceTree = "<group>"; };
+		F8CD960725792B480057D995 /* SideMenuCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCellView.xib; sourceTree = "<group>"; };
+		F8CD960B25792D050057D995 /* SideMenuCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCellView.swift; sourceTree = "<group>"; };
+		F8CD960F2579D41F0057D995 /* TransactionDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionDetail.storyboard; sourceTree = "<group>"; };
+		F8CD96132579DB850057D995 /* TransactionEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEditorViewController.swift; sourceTree = "<group>"; };
+		F8EA8807257BB5850049C921 /* TransactionEditorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEditorDelegate.swift; sourceTree = "<group>"; };
+		F8EA880F257CE5A90049C921 /* TransactionDBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDBHelper.swift; sourceTree = "<group>"; };
+		F8EA8815257E2AE50049C921 /* UsageTrendChartDataSourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageTrendChartDataSourceManager.swift; sourceTree = "<group>"; };
+		F8EA8819257F060D0049C921 /* UsageBreakdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageBreakdownViewController.swift; sourceTree = "<group>"; };
+		F8EA881F258059700049C921 /* TargetPeriodManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetPeriodManager.swift; sourceTree = "<group>"; };
+		F8EA882325805A980049C921 /* UsageBreakdownChartDataSourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageBreakdownChartDataSourceManager.swift; sourceTree = "<group>"; };
+		F8EC2FAF258838D000185EA2 /* UsageOverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageOverviewViewController.swift; sourceTree = "<group>"; };
+		F8EC2FB32588391B00185EA2 /* UsageHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageHistoryViewController.swift; sourceTree = "<group>"; };
+		F8EC2FB725884A9400185EA2 /* RefarenceDateOffsetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefarenceDateOffsetable.swift; sourceTree = "<group>"; };
+		F8FDA7AE257A5C4A00748B62 /* UsageJournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageJournalViewController.swift; sourceTree = "<group>"; };
+		F8FDA7BB257B5C6700748B62 /* AnimatableModalSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableModalSegue.swift; sourceTree = "<group>"; };
+		F8FDA7BF257B784F00748B62 /* TaxConfiguratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxConfiguratorViewController.swift; sourceTree = "<group>"; };
+		F8FDA7C3257B813E00748B62 /* TaxConfiguratorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxConfiguratorDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88175CC25789E7E0000C2D6 /* BudgetCoreDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +162,7 @@
 				F881758E25789A430000C2D6 /* BudgetManagerTests */,
 				F881759925789A430000C2D6 /* BudgetManagerUITests */,
 				F881757A25789A400000C2D6 /* Products */,
+				F88175CA25789E7D0000C2D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,12 +179,17 @@
 		F881757B25789A400000C2D6 /* BudgetManager */ = {
 			isa = PBXGroup;
 			children = (
+				F88175AB25789B1F0000C2D6 /* BarChart */,
+				F88175B025789B1F0000C2D6 /* CircleChartView */,
 				F881757C25789A400000C2D6 /* AppDelegate.swift */,
-				F881757E25789A400000C2D6 /* ViewController.swift */,
 				F881758025789A420000C2D6 /* Assets.xcassets */,
-				F881758225789A420000C2D6 /* Main.storyboard */,
+				F88175EB2578EB630000C2D6 /* MainWindow */,
+				F88175EC2578EB700000C2D6 /* DetailPageViews */,
+				F8FDA7C7257B83A300748B62 /* TransactionDetail */,
+				F88175E72578E5A00000C2D6 /* DetailPageViewControllerContainer.swift */,
 				F881758525789A430000C2D6 /* Info.plist */,
 				F881758625789A430000C2D6 /* BudgetManager.entitlements */,
+				F8EA880F257CE5A90049C921 /* TransactionDBHelper.swift */,
 			);
 			path = BudgetManager;
 			sourceTree = "<group>";
@@ -124,6 +212,89 @@
 			path = BudgetManagerUITests;
 			sourceTree = "<group>";
 		};
+		F88175AB25789B1F0000C2D6 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				F88175AC25789B1F0000C2D6 /* BarChartViewDelegate.swift */,
+				F88175AD25789B1F0000C2D6 /* BarChartDataSource.swift */,
+				F88175AE25789B1F0000C2D6 /* BarChartView.xib */,
+				F88175AF25789B1F0000C2D6 /* BarChartView.swift */,
+				F8184FC225838B2900DC0E33 /* BarChartView_OLD.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		F88175B025789B1F0000C2D6 /* CircleChartView */ = {
+			isa = PBXGroup;
+			children = (
+				F88175B125789B1F0000C2D6 /* CircleChartView.swift */,
+				F88175B225789B1F0000C2D6 /* CircleChartViewDelegate.swift */,
+				F88175B325789B1F0000C2D6 /* CircleChartView.xib */,
+				F88175B425789B1F0000C2D6 /* LegendListCellView.xib */,
+				F88175C025789BE50000C2D6 /* LegendListCellView.swift */,
+			);
+			path = CircleChartView;
+			sourceTree = "<group>";
+		};
+		F88175CA25789E7D0000C2D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F88175CB25789E7E0000C2D6 /* BudgetCoreDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F88175EB2578EB630000C2D6 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				F881758225789A420000C2D6 /* Main.storyboard */,
+				F88175DF2578E4AA0000C2D6 /* SidebarViewController.swift */,
+				F8CD960725792B480057D995 /* SideMenuCellView.xib */,
+				F8CD960B25792D050057D995 /* SideMenuCellView.swift */,
+				F88175D92578D6990000C2D6 /* DetailViewController.swift */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		F88175EC2578EB700000C2D6 /* DetailPageViews */ = {
+			isa = PBXGroup;
+			children = (
+				F88175C525789E100000C2D6 /* Contents.storyboard */,
+				F8EC2FB32588391B00185EA2 /* UsageHistoryViewController.swift */,
+				F8EC2FAF258838D000185EA2 /* UsageOverviewViewController.swift */,
+				F8EC2FB725884A9400185EA2 /* RefarenceDateOffsetable.swift */,
+				F8FDA7AE257A5C4A00748B62 /* UsageJournalViewController.swift */,
+				F8EA8819257F060D0049C921 /* UsageBreakdownViewController.swift */,
+				F88175D125789ED60000C2D6 /* HomeViewController.swift */,
+				F8EA882725805AAB0049C921 /* DataSourcesManagerForChart */,
+				F8FDA7BB257B5C6700748B62 /* AnimatableModalSegue.swift */,
+			);
+			path = DetailPageViews;
+			sourceTree = "<group>";
+		};
+		F8EA882725805AAB0049C921 /* DataSourcesManagerForChart */ = {
+			isa = PBXGroup;
+			children = (
+				F8EA8815257E2AE50049C921 /* UsageTrendChartDataSourceManager.swift */,
+				F8EA882325805A980049C921 /* UsageBreakdownChartDataSourceManager.swift */,
+				F8EA881F258059700049C921 /* TargetPeriodManager.swift */,
+				F8184FB025805C1A00DC0E33 /* DataContainerForChart.swift */,
+			);
+			path = DataSourcesManagerForChart;
+			sourceTree = "<group>";
+		};
+		F8FDA7C7257B83A300748B62 /* TransactionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD960F2579D41F0057D995 /* TransactionDetail.storyboard */,
+				F8FDA7BF257B784F00748B62 /* TaxConfiguratorViewController.swift */,
+				F8FDA7C3257B813E00748B62 /* TaxConfiguratorDelegate.swift */,
+				F8CD96132579DB850057D995 /* TransactionEditorViewController.swift */,
+				F8EA8807257BB5850049C921 /* TransactionEditorDelegate.swift */,
+			);
+			path = TransactionDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +305,7 @@
 				F881757525789A400000C2D6 /* Sources */,
 				F881757625789A400000C2D6 /* Frameworks */,
 				F881757725789A400000C2D6 /* Resources */,
+				F88175CE25789E7E0000C2D6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,8 +399,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88175BC25789B1F0000C2D6 /* LegendListCellView.xib in Resources */,
 				F881758125789A420000C2D6 /* Assets.xcassets in Resources */,
+				F88175C625789E100000C2D6 /* Contents.storyboard in Resources */,
+				F8CD960825792B480057D995 /* SideMenuCellView.xib in Resources */,
+				F8CD96102579D41F0057D995 /* TransactionDetail.storyboard in Resources */,
+				F88175B725789B1F0000C2D6 /* BarChartView.xib in Resources */,
 				F881758425789A420000C2D6 /* Main.storyboard in Resources */,
+				F88175BB25789B1F0000C2D6 /* CircleChartView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +431,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F881757F25789A400000C2D6 /* ViewController.swift in Sources */,
+				F88175DA2578D6990000C2D6 /* DetailViewController.swift in Sources */,
+				F8FDA7C4257B813E00748B62 /* TaxConfiguratorDelegate.swift in Sources */,
+				F88175E82578E5A00000C2D6 /* DetailPageViewControllerContainer.swift in Sources */,
+				F8FDA7BC257B5C6800748B62 /* AnimatableModalSegue.swift in Sources */,
+				F8EA8808257BB5850049C921 /* TransactionEditorDelegate.swift in Sources */,
+				F8CD960C25792D050057D995 /* SideMenuCellView.swift in Sources */,
+				F88175C125789BE50000C2D6 /* LegendListCellView.swift in Sources */,
+				F8EC2FB42588391B00185EA2 /* UsageHistoryViewController.swift in Sources */,
+				F8EA8816257E2AE50049C921 /* UsageTrendChartDataSourceManager.swift in Sources */,
+				F8184FC325838B2900DC0E33 /* BarChartView_OLD.swift in Sources */,
+				F8EA882425805A980049C921 /* UsageBreakdownChartDataSourceManager.swift in Sources */,
+				F8FDA7C0257B784F00748B62 /* TaxConfiguratorViewController.swift in Sources */,
+				F88175B625789B1F0000C2D6 /* BarChartDataSource.swift in Sources */,
+				F8EA8810257CE5A90049C921 /* TransactionDBHelper.swift in Sources */,
+				F8184FB125805C1A00DC0E33 /* DataContainerForChart.swift in Sources */,
+				F88175B825789B1F0000C2D6 /* BarChartView.swift in Sources */,
+				F8EA881A257F060D0049C921 /* UsageBreakdownViewController.swift in Sources */,
+				F88175B525789B1F0000C2D6 /* BarChartViewDelegate.swift in Sources */,
+				F88175D225789ED60000C2D6 /* HomeViewController.swift in Sources */,
 				F881757D25789A400000C2D6 /* AppDelegate.swift in Sources */,
+				F88175B925789B1F0000C2D6 /* CircleChartView.swift in Sources */,
+				F88175E02578E4AA0000C2D6 /* SidebarViewController.swift in Sources */,
+				F8FDA7AF257A5C4A00748B62 /* UsageJournalViewController.swift in Sources */,
+				F8FDA7B4257A908A00748B62 /* TransactionEditorViewController.swift in Sources */,
+				F8EC2FB825884A9400185EA2 /* RefarenceDateOffsetable.swift in Sources */,
+				F8EC2FB0258838D000185EA2 /* UsageOverviewViewController.swift in Sources */,
+				F88175BA25789B1F0000C2D6 /* CircleChartViewDelegate.swift in Sources */,
+				F8EA8820258059700049C921 /* TargetPeriodManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +628,7 @@
 				CODE_SIGN_ENTITLEMENTS = BudgetManager/BudgetManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = GM36ZRA62C;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = BudgetManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -445,7 +649,7 @@
 				CODE_SIGN_ENTITLEMENTS = BudgetManager/BudgetManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = GM36ZRA62C;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = BudgetManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -465,7 +669,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = GM36ZRA62C;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BudgetManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,7 +691,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = GM36ZRA62C;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BudgetManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -508,7 +712,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = GM36ZRA62C;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BudgetManagerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,7 +732,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = GM36ZRA62C;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BudgetManagerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
